@@ -15,6 +15,9 @@ HELPER_SETTINGS = {
         }]
     },
     'LANGUAGE_CODE': 'en',
+    'THUMBNAIL_PROCESSORS': [
+        'filer.thumbnail_processors.scale_and_crop_with_subject_location',
+    ],
 }
 
 def run():
